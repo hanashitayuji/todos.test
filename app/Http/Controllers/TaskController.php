@@ -15,7 +15,7 @@ use Illuminate\Foundation\Http\FormRequest;
 class TaskController extends Controller
 {
     public function index(Folder $folder) {
-        $this->checkRelation($folder, $task);
+        //$this->checkRelation($folder, $task);
 
         // ★ ユーザーのフォルダを取得する
         $folders = Auth::user()->folders()->get();
